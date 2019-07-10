@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Predict House Prices</h1>
+
+<form action="cgi-bin/predict.py">
+    <table>
+        <tr>
+            <td>Enter bedrooms</td>
+            <td>
+                <input type="text" placeholder="Enter bedrooms" name="bedrooms">
+            </td>
+        </tr>
+        <tr>
+            <td>Enter bathrooms</td>
+            <td>
+                <input type="text" placeholder="Enter bathrooms" name="bathrooms">
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Sqft_living</td>
+            <td>
+                <input type="text" placeholder="Enter living area" name="sqft_living">
+            </td>
+        </tr>
+        <tr>
+            <td>Enter sqft_lot</td>
+            <td>
+                <input type="text" placeholder="Enter sqft_lot" name="sqft_lot">
+            </td>
+        </tr>
+        <tr>
+            <td>Enter floors</td>
+            <td>
+                <input type="text" placeholder="Enter floors" name="floors">
+            </td>
+        </tr>
+        <tr>
+            <td>Select Waterfront</td>
+            <td>
+                <select name="waterfront" id="">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="reset">
+            </td>
+            <td>
+                <input type="submit" value="Calculate Price">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
