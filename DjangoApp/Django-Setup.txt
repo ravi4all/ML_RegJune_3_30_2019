@@ -1,0 +1,36 @@
+1. pip install Django
+2. Create a folder wherever you want to make project
+3. Open cmd inside that folder
+4. Type --> django-admin startproject projectName
+5. Manage.py 
+6. _init_ is a package
+7. Settings is the main file
+8. url is the main controller of website
+9. Open cmd inside project
+10. Type --> python manage.py runserver
+11. Run localhost:8000
+12. Make a webapp inside project....type :-
+    python manage.py startapp appName
+13. It will make a folder inside project named as webapp
+14. Inside new webapp we will get MVC
+	- Models
+	- Views
+	- Urls.py --> Controller
+15. Add webapp in settings.py inside installed_apps
+16. Also give url pattern in urls.py
+	-  url(r'^webapp/', include('webapp.urls'))
+17. Now start working in views.py
+---------------------------------------------------------------------------------------
+from django.http import HttpResponse
+def index(request):
+    return HttpResponse("<h2>This is hello world app</h2>")
+---------------------------------------------------------------------------------------
+18. Make a url.py and give a url pattern for your page
+---------------------------------------------------------------------------------------
+urlpatterns = [
+    path('/', views.index, name='index'),
+]
+---------------------------------------------------------------------------------------
+
+19. All set....Ready to move...localhost:8000/webapp/
+20. That's it

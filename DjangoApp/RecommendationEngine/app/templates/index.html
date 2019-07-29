@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>PrimeFlix</h1>
+
+    <section id="section_1">
+        <h2>Action Movies</h2>
+        <!-- {{data.action}} -->
+        <ul>
+            {% for item in data.action %}
+            <li>
+                {{item}}
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section id="section_2">
+        <h2>Comedy Movies</h2>
+        <!-- {{data.comedy}} -->
+        <ul>
+            {% for item in data.comedy %}
+            <li>
+                {{item}}
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+</body>
+
+</html>
